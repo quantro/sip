@@ -6,6 +6,8 @@ Firt thing first, this apps will contain (front end-public):
 - Articles (related to my office of course)
 - Announcemet (we conduct training and tutorial, so the announcement will mainly contain schedule)
 - ??
+
+
 Another end (internal use)
 - Letter / Document management
 - employee management 
