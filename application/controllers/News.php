@@ -3,14 +3,16 @@ class News extends CI_Controller {
 
 	public function __construct()
 	{
-			parent::__construct();
-			$this->load->model('news_model');
+		parent::__construct();
+		$this->load->model('news_model');
+		$this->load->model('menu_model');
 	}
 
 	public function index()
 	{
 		$data['news'] = $this->news_model->get_news();
 		$data['title'] = 'News archive';
+		var_dump($this->menu_model->menu());
 
 		$this->load->view('templates/header', $data);
 		$this->load->view('news/index', $data);
@@ -56,4 +58,5 @@ class News extends CI_Controller {
 			$this->load->view('news/success');
 		}
 	}  
+	
 }

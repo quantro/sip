@@ -11,5 +11,8 @@
 		</script>
     </head>
     <body>
-
-        <h1>CodeIgniter Tutorial</h1>
+		<?php
+		/* foreach($menus as $menu){
+			echo anchor(site_url($menu),$menu);
+		}	*/	
+		?>
